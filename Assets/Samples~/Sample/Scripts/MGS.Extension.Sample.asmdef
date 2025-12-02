@@ -1,0 +1,16 @@
+{
+    "name": "MGS.Extension.Sample",
+    "rootNamespace": "",
+    "references": [
+        "MGS.Extension"
+    ],
+    "includePlatforms": [],
+    "excludePlatforms": [],
+    "allowUnsafeCode": false,
+    "overrideReferences": false,
+    "precompiledReferences": [],
+    "autoReferenced": true,
+    "defineConstraints": [],
+    "versionDefines": [],
+    "noEngineReferences": false
+}
