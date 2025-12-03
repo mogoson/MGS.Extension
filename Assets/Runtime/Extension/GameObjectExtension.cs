@@ -1,8 +1,8 @@
 ﻿/*************************************************************************
  *  Copyright © 2025 Mogoson. All rights reserved.
  *------------------------------------------------------------------------
- *  File         :  GameObjectExtention.cs
- *  Description  :  Extention for UnityEngine.GameObject.
+ *  File         :  GameObjectExtension.cs
+ *  Description  :  Extension for UnityEngine.GameObject.
  *------------------------------------------------------------------------
  *  Author       :  Mogoson
  *  Version      :  1.0
@@ -15,9 +15,9 @@ using UnityEngine;
 namespace MGS.Extension
 {
     /// <summary>
-	/// Extention for UnityEngine.GameObject.
+	/// Extension for UnityEngine.GameObject.
 	/// </summary>
-	public static class GameObjectExtention
+	public static class GameObjectExtension
     {
         /// <summary>
         /// Set layer include it's children.

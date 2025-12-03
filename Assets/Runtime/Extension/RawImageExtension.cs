@@ -25,8 +25,7 @@ namespace MGS.Extension
                 var texRect = new Vector2(image.texture.width, image.texture.height);
                 rect = BorderUtility.Adapt(texRect, border);
             }
-            image.rectTransform.SetSizeWithCurrentAnchors(RectTransform.Axis.Horizontal, rect.x);
-            image.rectTransform.SetSizeWithCurrentAnchors(RectTransform.Axis.Vertical, rect.y);
+            image.rectTransform.SetSize(rect);
         }
     }
 }

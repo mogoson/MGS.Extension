@@ -1,30 +1,25 @@
 /*************************************************************************
  *  Copyright © 2025 Mogoson All rights reserved.
  *------------------------------------------------------------------------
- *  File         :  ImageExtension.cs
+ *  File         :  RectTransformExtension.cs
  *  Description  :  Default.
  *------------------------------------------------------------------------
  *  Author       :  Mogoson
  *  Version      :  1.0.0
- *  Date         :  12/02/2025
+ *  Date         :  12/03/2025
  *  Description  :  Initial development version.
  *************************************************************************/
 
 using UnityEngine;
-using UnityEngine.UI;
 
 namespace MGS.Extension
 {
-    public static class ImageExtension
+    public static class RectTransformExtension
     {
-        public static void AdaptBorder(this Image image, Vector2 border)
+        public static void SetSize(this RectTransform rectTransform, Vector2 size)
         {
-            var rect = border;
-            if (image.sprite != null)
-            {
-                rect = BorderUtility.Adapt(image.sprite.rect.size, border);
-            }
-            image.rectTransform.SetSize(rect);
+            rectTransform.SetSizeWithCurrentAnchors(RectTransform.Axis.Horizontal, size.x);
+            rectTransform.SetSizeWithCurrentAnchors(RectTransform.Axis.Vertical, size.y);
         }
     }
 }
