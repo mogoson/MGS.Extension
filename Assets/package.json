@@ -1,0 +1,24 @@
+{
+    "name": "com.mgs.extension",
+    "version": "1.0.0",
+    "displayName": "Extension",
+    "description": "Extension method for Unity object.",
+    "unity": "2021.3",
+    "keywords": [
+        "extension",
+        "method",
+        "unity"
+    ],
+    "author": {
+        "name": "Mogoson",
+        "email": "mogoson@outlook.com",
+        "url": "https://github.com/mogoson"
+    },
+    "samples": [
+        {
+            "displayName": "Sample",
+            "description": "Sample for extension methods.",
+            "path": "Samples~/Sample"
+        }
+    ]
+}

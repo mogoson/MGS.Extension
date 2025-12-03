@@ -18,19 +18,19 @@ namespace MGS.Extension
     {
         public static Vector2 Adapt(Vector2 rect, Vector2 border)
         {
-            var x = border.x;
-            var y = border.y;
-            var xr = rect.x / border.x;
-            var yr = rect.y / border.y;
-            if (xr > yr)
+            var w = border.x;
+            var h = border.y;
+            var wr = rect.x / border.x;
+            var hr = rect.y / border.y;
+            if (wr > hr)
             {
-                y = x * (rect.y / rect.x);
+                h = w * (rect.y / rect.x);
             }
             else
             {
-                x = y * (rect.x / rect.y);
+                w = h * (rect.x / rect.y);
             }
-            return new Vector2(x, y);
+            return new Vector2(w, h);
         }
     }
 }
